@@ -125,7 +125,7 @@
                     </h5>
                     <h2 class="pacote">Pacotes a partir de</h2>
                     <h4 class="preco">R$</h4>
-                    <h1 class="valor">568
+                    <h1 class="valor">568<s>R$699</s>
                         <a class="arow" href="#">
                             <box-icon name='right-arrow-circle' type='solid' color="#00B08B" size="md"></box-icon>
                         </a>
@@ -146,7 +146,7 @@
                     </h5>
                     <h2 class="pacote">Pacotes a partir de</h2>
                     <h4 class="preco">R$</h4>
-                    <h1 class="valor">568
+                    <h1 class="valor">568<s>R$699</s>
                         <a class="arow" href="#">
                             <box-icon name='right-arrow-circle' type='solid' color="#00B08B" size="md"></box-icon>
                         </a>
@@ -167,7 +167,7 @@
                     </h5>
                     <h2 class="pacote">Pacotes a partir de</h2>
                     <h4 class="preco">R$</h4>
-                    <h1 class="valor">568
+                    <h1 class="valor">568<s>R$699</s>
                         <a class="arow" href="#">
                             <box-icon name='right-arrow-circle' type='solid' color="#00B08B" size="md"></box-icon>
                         </a>
@@ -193,25 +193,73 @@
 
             <div class="acomodacao">
                 <h1>Pesquise por tipos de acomodação</h1>
-                <div class="item">
-                    <div class="col-info" id="item-1">
+                <scroll-container class="item">
+                    <scroll-page class="col-info" id="item-1">
                         <h1>Hotéis</h1>
-                    </div>
-                    <div class="col-info" id="item-2">
+                    </scroll-page>
+                    <scroll-page class="col-info" id="item-2">
                         <h1>Resorts</h1>
-                    </div>
-                    <div class="col-info" id="item-3">
+                    </scroll-page>
+                    <scroll-page class="col-info" id="item-3">
                         <h1>Hotéis</h1>
-                    </div>
-                    <div class="col-info" id="item-4">
+                    </scroll-page>
+                    <scroll-page class="col-info" id="item-4">
                         <h1>Resorts</h1>
-                    </div>
-                </div>
+                    </scroll-page>
+                </scroll-container>
             </div>
         </div>
     </div>
     <footer id="rodape">
-
+        <h1>Travel
+            <a href="#" class="icon"><box-icon name='gmail' type='logo' size="md" color="#fff"></box-icon></a>
+            <a href="#" class="icon"><box-icon name='instagram' type='logo' size="md" color="#fff"></box-icon></a>
+            <a href="#" class="icon"><box-icon name='twitter' type='logo' size="md" color="#fff"></box-icon></a>
+            <a href="#" class="icon"><box-icon name='facebook-square' type='logo' size="md" color="#fff" ></box-icon></a>
+        </h1>
+        
+        <div class="footer-col" id="left">
+            <h2>Fique por dentro das novidades</h2>
+            <label>Inscreva-se para receber noticias
+                <input type="email" placeholder="Digite seu e-mail">
+            </label>
+            <a href="#">
+                Inscrever
+            </a>
+        </div>
+        <div class="footer-col" id="center">
+            <h2>Formas de contato</h2>
+            <h4>(11)99999-9999</h4>
+            <h4>(48)99999-9999</h4>
+            <h4>travel@travel.com</h4>
+        </div>
+        <div class="footer-col" id="right">
+            <h2>Está procurando por:</h2>
+           <div class="list" id="left-list">
+            <ul class="list-unstyled">
+                <li><a href="#" class="secondary-color">Viagens Internacionais</a></li>
+                <li><a href="#" class="secondary-color">Cruzeiros</a></li>
+                <li><a href="#" class="secondary-color">Viagens Nacionais</a></li>
+                <li><a href="#" class="secondary-color">Hotéis</a></li>
+            </ul>
+           </div>
+           <div class="list" id="right-list">
+            <ul class="list-unstyled">
+                <li><a href="#" class="secondary-color">Contato</a></li>
+                <li><a href="#" class="secondary-color">Ajuda</a></li>
+                <li><a href="#" class="secondary-color">Sobre nós</a></li>
+                <li><a href="#" class="secondary-color">Regulamentos</a></li>
+            </ul>
+           </div>
+        </div>
+        <div class="fim-footer">
+            <span>
+                Travel©2022
+            </span>
+            <span id="heart">
+                Viaje conosco!<box-icon type='solid' name='heart-circle' color="#fff"></box-icon>
+            </span>
+        </div>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script>
@@ -235,6 +283,16 @@
         }
         lista.forEach((item) =>
             item.addEventListener('click', activeLink));
+    </script>
+    <script>
+        document.querySelector(".item")
+        .addEventListener("wheel", event => {
+            if(event.deltaY > 0){
+                event.target.scrollBy(300, 0)
+            } else {
+                event.target.scrollBy(-300, 0)
+            }
+        })
     </script>
 </body>
 
