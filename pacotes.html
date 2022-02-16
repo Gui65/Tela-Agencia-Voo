@@ -25,10 +25,10 @@
         <img id="logo" src="./img/Icon.png" alt="">
         <div class="navigation">
             <ul>
-                <li class="list active">
+                <li class="list">
                     <a href="index.html">
                         <i class="icon">
-                            <box-icon name='bed' color="#00B08B"></box-icon>
+                            <box-icon name='bed' color="#C6C5C5"></box-icon>
                         </i>Hospedagem
                     </a>
                 </li>
@@ -39,10 +39,10 @@
                         </i> Passagens
                     </a>
                 </li>
-                <li class="list">
+                <li class="list active">
                     <a href="pacotes.html">
                         <i class="icon">
-                            <box-icon name='package' color="#C6C5C5"></box-icon>
+                            <box-icon name='package' color="#00B08B"></box-icon>
                         </i>Pacotes
                     </a>
                 </li>
@@ -79,18 +79,19 @@
         <div class="buscar">
             <ul>
                 <li class="busque active">
-                    <a href="#">Todos</a>
+                    <a href="#">Voo + 2 Carro</a>
                 </li>
                 <li class="busque">
-                    <a href="#">Hotéis</a>
-                </li>
-                <li class="busque">
-                    <a href="#">Aluguéis por temporada</a>
+                    <a href="#">Voo + Hospedagem</a> 
                 </li>
             </ul>
             <div class="input">
+                <label>Para onde você está saindo?
+                    <input id="cidade-1" type="text" placeholder="Insira uma cidade">
+                </label>
+                <i class="icon"><box-icon name='transfer' size="md" color="#D81159"></box-icon></i>
                 <label>Para onde você vai?
-                    <input id="cidade" type="text" placeholder="Insira uma cidade">
+                    <input id="cidade-2" type="text" placeholder="Insira uma cidade">
                 </label>
                 <label>Ida
                     <input id="ida" type="date" placeholder="Entrada">
@@ -98,8 +99,8 @@
                 <label>Volta
                     <input id="volta" type="date" placeholder="Saída">
                 </label>
-                <label>Quartos
-                    <input id="quartos" type="text">
+                <label>Passageiros
+                    <input id="Passageiros" type="number" placeholder="Total de passageiros">
                 </label>
                 <a href="#" class="bottom">
                     Buscar
@@ -108,15 +109,15 @@
         </div>
         <div class="lado-esquerdo">
             <i class="icon">
-                <box-icon name='bed' color="#DD1830"></box-icon>
+                <box-icon name='briefcase-alt' color="#D81159"></box-icon>
             </i>
-            <h1>Hospedagens em oferta</h1>
+            <h1>Pacotes imperdíveis</h1>
             <div class="col-1">
                 <div class="image">
-                    <img src="./img/unsplash_7F65HDP0-E0.png" alt="">
+                    <img src="./img/Dubai.png" alt="">
                 </div>
                 <div class="info">
-                    <h2>Rio de Janeiro</h2>
+                    <h2>Dubai</h2>
                     <i class="icon">
                         <box-icon type='solid' name='badge-dollar' color="#DD1830" size="lg"></box-icon>
                     </i>
@@ -134,10 +135,10 @@
             </div>
             <div class="col-1">
                 <div class="image">
-                    <img src="./img/unsplash_Gisi_G8CXWI.png" alt="">
+                    <img src="./img/timesSquare.png" alt="">
                 </div>
                 <div class="info">
-                    <h2>Rio de Janeiro</h2>
+                    <h2>Estados Unidos</h2>
                     <i class="icon">
                         <box-icon type='solid' name='badge-dollar' color="#DD1830" size="lg"></box-icon>
                     </i>
@@ -155,10 +156,10 @@
             </div>
             <div class="col-1">
                 <div class="image">
-                    <img src="./img/unsplash_tWuni4cYsXs (1).png" alt="">
+                    <img src="./img/Alemanha.png" alt="">
                 </div>
                 <div class="info">
-                    <h2>Rio de Janeiro</h2>
+                    <h2>Alemanha</h2>
                     <i class="icon">
                         <box-icon type='solid' name='badge-dollar' color="#DD1830" size="lg"></box-icon>
                     </i>
@@ -192,19 +193,19 @@
             </div>
 
             <div class="acomodacao">
-                <h1>Pesquise por tipos de acomodação</h1>
+                <h1>Destinos mais buscados</h1>
                 <div class="item">
-                    <div class="col-info" id="item-1">
-                        <h1>Hotéis</h1>
+                    <div class="col-info" id="item-1-pacotes">
+                        <h1>Barcelona</h1>
                     </div>
-                    <div class="col-info" id="item-2">
-                        <h1>Resorts</h1>
+                    <div class="col-info" id="item-2-pacotes">
+                        <h1>Paris</h1>
                     </div>
-                    <div class="col-info" id="item-3">
-                        <h1>Hotéis</h1>
+                    <div class="col-info" id="item-3-pacotes">
+                        <h1>Rio de Janeiro</h1>
                     </div>
-                    <div class="col-info" id="item-4">
-                        <h1>Resorts</h1>
+                    <div class="col-info" id="item-4-pacotes">
+                        <h1>Berlim</h1>
                     </div>
                 </div>
             </div>
@@ -238,4 +239,4 @@
     </script>
 </body>
 
-</html>
+</html> 
