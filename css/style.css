@@ -146,7 +146,7 @@ body {
     font-size: 18px;
     text-align: center;
     font-weight: 300;
-    outline:0;
+    outline: 0;
 }
 
 .buscar #cidade {
@@ -261,12 +261,13 @@ body {
     font-weight: 400;
 }
 
-.col-1 .info s{
+.col-1 .info s {
     font-size: 14px;
     font-weight: 400;
     margin-left: 2%;
     text-decoration: line-through;
 }
+
 .col-1 .info .arow {
     margin: 0;
     float: right;
@@ -320,9 +321,7 @@ body {
     transform: translate(0, 35%);
 }
 
-.acomodacao{
-    
-}
+.acomodacao {}
 
 .acomodacao h1 {
     margin-top: 10%;
@@ -380,7 +379,7 @@ body {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    
+
 }
 
 ::-webkit-scrollbar {
@@ -436,6 +435,213 @@ body {
 
 }
 
+/*Pacote-2 */
+
+.conteudo {
+    position: relative;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 1400px;
+}
+
+.bottom {
+    height: 80px;
+    width: 100px;
+    line-height: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 2%;
+    color: #00B08B;
+    border: 1px solid #00B08B;
+    border-radius: 20px;
+    font-size: 24px;
+
+}
+
+.conteudo h1 {
+    color: #757575;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.conteudo .col-pacote-2 {
+    display: inline-block;
+    margin-top: 2%;
+
+}
+
+.conteudo #filtros {
+    width: 30%;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 95px rgba(0, 0, 0, 0.06);
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.conteudo #hoteis {
+    width: 65%;
+    margin-left: 4%;
+    float: right;
+
+}
+
+.conteudo #hoteis .column-hoteis {
+    width: 100%;
+    height: 600px;
+   
+}
+
+.conteudo #hoteis #down{
+    margin-top: 4%;
+}
+
+.conteudo #filter {
+    font-size: 40px;
+    margin-left: 5%;
+    color: #5A5959;
+}
+
+.conteudo #filter box-icon {
+    margin-right: 2%;
+    transform: translate(0, 20%);
+}
+
+.conteudo .list-1 {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.conteudo .list-1 a{
+    margin-left: 30%;
+}
+
+.conteudo .list-1 .title {
+    color: #00B08B;
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+
+.conteudo .list-1 ul li {
+    list-style: none;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.conteudo .list-1 input {
+    display: none;
+}
+
+.conteudo .list-1 input+label:before {
+    content: '';
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    border: 2px solid #C6C5C5;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+.conteudo .list-1 input:checked+label:before {
+    background-color: #00B08B;
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    border: none;
+    padding: 2px;
+}
+
+.col-1-pacote {
+    width: 42%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 1%;
+
+}
+
+.column-hoteis .image:first-child {
+    position: relative;
+    float: left;
+    margin: 0;
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.column-hoteis .image img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.column-hoteis .info:last-child {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 0;
+    float: left;
+    top: -80px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 5%;
+    box-shadow: 0px 4px 119px rgba(0, 0, 0, 0.09);
+}
+
+.column-hoteis .info h1 {
+    margin-left: 6%;
+}
+
+.column-hoteis .info h4 {
+    
+    color: #5A5959;
+    transform: translate(0, 180%);
+}
+
+.column-hoteis .info .title {
+    font-weight: 500;
+    font-size: 32px;
+    color: #5A5959;
+
+}
+
+.column-hoteis .info .title box-icon {
+    float: right;
+    transform: translate(0, 25%);
+}
+
+.column-hoteis .info .voo {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.46);
+    
+
+}
+
+.column-hoteis .info .voo box-icon {
+    transform: translate(0, 20%);
+    margin-right: 2%;
+}
+
+.column-hoteis .info .info-title {
+    font-weight: 500;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.column-hoteis .info .info-sub {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+.column-hoteis .info .bottom{
+    color: #fff;
+    margin-left: 50%;
+    
+    background-color: #00B08B;
+}
 
 /* RODAPE */
 #rodape {
@@ -446,19 +652,20 @@ body {
     padding-right: 16%;
     padding-top: 1%;
 }
-#rodape h1{
+
+#rodape h1 {
     margin-left: 2%;
     margin-top: 1%;
     color: #fff;
-    
+
 }
 
-footer h1 box-icon{
+footer h1 box-icon {
     float: right;
     margin-left: 1%;
 }
 
-.footer-col{
+.footer-col {
     display: inline-block;
     height: 200px;
     width: 32.2%;
@@ -469,18 +676,18 @@ footer h1 box-icon{
     padding: 1%;
 }
 
-.footer-col h2{
+.footer-col h2 {
     margin-bottom: 5%;
     font-weight: 400;
 }
 
-.footer-col h4{
+.footer-col h4 {
     font-weight: 300;
     margin-top: 3%;
     font-size: 18px;
 }
 
-.fim-footer{
+.fim-footer {
     width: 100%;
     height: 100px;
     margin-top: 2%;
@@ -488,32 +695,32 @@ footer h1 box-icon{
     border-top: 2px solid #fff;
 }
 
-.fim-footer span{
+.fim-footer span {
     font-weight: 300;
     font-size: 18px;
     color: #fff;
 }
 
-.fim-footer #heart{
+.fim-footer #heart {
     float: right;
 }
 
-.fim-footer #heart box-icon{
+.fim-footer #heart box-icon {
     margin-left: 10px;
-    transform: translate( 0, 20%);
+    transform: translate(0, 20%);
 }
 
-footer #left{
+footer #left {
     float: left;
 }
 
-footer #right{
+footer #right {
     float: right;
     border: none;
-    
+
 }
 
-footer #left input{
+footer #left input {
     display: block;
     margin-top: 2%;
     height: 20px;
@@ -526,13 +733,13 @@ footer #left input{
     outline: 0;
 }
 
-footer #left input::placeholder{
+footer #left input::placeholder {
     color: #fff;
     font-weight: 200;
     font-size: 15px;
 }
 
-footer #left a{
+footer #left a {
     height: 80px;
     width: 200px;
     line-height: 80px;
@@ -544,26 +751,26 @@ footer #left a{
     font-size: 24px;
 }
 
-footer #left a:hover{
+footer #left a:hover {
     color: #00B08B;
     background-color: #fff;
 }
 
-footer .list{
+footer .list {
     margin-left: 3%;
     display: inline-block;
     width: 45%;
-    
+
 }
 
-footer .list ul li{
+footer .list ul li {
     margin-top: 5%;
     color: #fff;
     list-style: none;
-    
+
 }
 
-footer .list ul li a{
+footer .list ul li a {
     color: #fff;
     font-weight: 300;
 }
@@ -597,16 +804,17 @@ footer .list ul li a{
         margin-right: 5%;
         margin-top: 6%;
     }
+
     /*Pacotes */
     #cidade-1 {
-        width: 250px;
-        
+        width: 240px;
+
     }
-    
+
     #cidade-2 {
-        width: 250px;
+        width: 240px;
     }
-    
+
     #passageiro {
         width: 180px;
     }
