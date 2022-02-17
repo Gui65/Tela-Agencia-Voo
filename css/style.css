@@ -643,7 +643,7 @@ body {
     background-color: #00B08B;
 }
 
-/*Passagens */
+/* Passagens */
 
 .acomodacao #item-1-passagem {
     background: url(../img/PrimeiraClasse.png);
@@ -660,8 +660,8 @@ body {
 .acomodacao #item-3-passagem {
     background: url(../img/Economica.png);
     background-position: center center;
-
 }
+
 /* RODAPE */
 #rodape {
     width: 100%;
