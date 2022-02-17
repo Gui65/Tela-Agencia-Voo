@@ -643,6 +643,25 @@ body {
     background-color: #00B08B;
 }
 
+/*Passagens */
+
+.acomodacao #item-1-passagem {
+    background: url(../img/PrimeiraClasse.png);
+    background-position: center center;
+
+}
+
+.acomodacao #item-2-passagem {
+    background: url(../img/Executivo.png);
+    background-position: center center;
+
+}
+
+.acomodacao #item-3-passagem {
+    background: url(../img/Economica.png);
+    background-position: center center;
+
+}
 /* RODAPE */
 #rodape {
     width: 100%;
