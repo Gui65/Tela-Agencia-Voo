@@ -459,6 +459,11 @@ body {
 
 }
 
+.bottom:hover{
+    color: #fff;
+    background-color: #00B08B;
+}
+
 .conteudo h1 {
     color: #757575;
     font-weight: 400;
@@ -643,6 +648,12 @@ body {
     background-color: #00B08B;
 }
 
+.column-hoteis .info .bottom:hover{
+    background-color: #fff;
+    color: #00B08B;
+    border-color: #00B08B;
+}
+
 /* Passagens */
 
 .acomodacao #item-1-passagem {
@@ -797,7 +808,7 @@ footer .list ul li a {
 
 
 
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 1820px) {
     .buscar #cidade {
         width: 500px;
     }
